@@ -1,0 +1,4 @@
+# USER API
+
+POST /exist                           controllers.OpenApiControllers.isUserExist
+POST /exist/get                       controllers.OpenApiControllers.getUserId

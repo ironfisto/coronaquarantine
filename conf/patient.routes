@@ -1,0 +1,2 @@
+GET  /profile/:pId                          controllers.OpenApiControllers.getPatientProfile(pId)
+

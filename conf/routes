@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+-> /v1.0/user     user.Routes
+-> /v1.0/doctor   doctor.Routes
+-> /v1.0/patient  patient.Routes
+
+
+# OPEN APIS
+GET     /                               controllers.HomeController.index
+GET     /v1.0/districts                 controllers.OpenApiControllers.getDistrictsDto(stateName:Option[String])
+GET     /v1.0/states                    controllers.OpenApiControllers.getStateDto
+GET     /v1.0/healthstatus              controllers.OpenApiControllers.getHealthStatusDto
+GET     /v1.0/testreports               controllers.OpenApiControllers.getTestReportsDto
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+POST /register                              controllers.doctorControllers.DoctorController.registerDoctor
+GET  /profile/:dId                          controllers.doctorControllers.DoctorController.getDoctorProfile(dId)
+POST /patient/register                      controllers.doctorControllers.DoctorController.registerPatient
+# POST /patient/testreport done
+# POST /patient/screen
